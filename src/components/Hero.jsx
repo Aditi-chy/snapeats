@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url("/src/assets/food.jpg")` }}
+      style={{ backgroundImage: `url(${foodImg})` }}
     >
       <div className="absolute inset-0 bg-black/40 dark:bg-black/50"></div>
 
@@ -30,7 +30,6 @@ export default function Hero() {
           onSubmit={handleSearch}
           className="flex flex-col sm:flex-row gap-4 w-full"
         >
-          {/* Location Input */}
           <div className="relative flex-1">
             <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-red-600">
               <MdLocationOn size={24} />
@@ -44,7 +43,6 @@ export default function Hero() {
             />
           </div>
 
-          {/* Food Search Input */}
           <div className="relative flex-1">
             <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
               <MdSearch size={24} />
